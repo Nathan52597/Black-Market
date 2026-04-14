@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Market | Sports Collectibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>THE <b>BLACK MARKET</b></h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2 style="margin-top: 0;">PokeStore</h2>
+            <div id="products"></div>
+        </main>
+
+        <aside id="sidebar-cart">
+            <h2 style="margin-top:0">Your Cart (<span id="count">0</span>)</h2>
+            <div id="cart-items"></div>
+            
+            <div class="summary-row" style="margin-top: 20px;">
+                <span>Subtotal</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span id="shipping">$5.00</span>
+            </div>
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span id="total">$5.00</span>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <input type="text" id="cust-name" class="checkout-input" placeholder="Full Name" required>
+                <input type="email" id="cust-email" class="checkout-input" placeholder="Email for receipt" required>
+                <button class="btn-checkout" onclick="checkout()" id="checkout-btn">Complete Purchase</button>
+            </div>
+            
+            <form id="hidden-form" method="POST" style="display:none;"></form>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
