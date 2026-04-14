@@ -80,7 +80,7 @@ function checkout() {
     const form = document.getElementById('hidden-form');
     
     // IMPORTANT: Replace the email below with your real email
-    form.action = `https://formsubmit.co/your-actual-email@example.com`; 
+    form.action = `https://formsubmit.co/nathanwin4fun@gmail,com`; 
     
     form.innerHTML = `
         <input type="text" name="name" value="${name}">
